@@ -1,0 +1,255 @@
+<chapter id="commands">
+
+<title>Command Reference</title>
+
+<sect1 id="filemenu">
+<title>The File Menu</title>
+<para>
+<variablelist>
+
+<varlistentry>
+<term><menuchoice>
+<shortcut>
+<keycombo action="simul">&Ctrl;<keycap>Q</keycap></keycombo>
+</shortcut>
+<guimenu>File</guimenu>
+<guimenuitem>Quit</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>Quit</action> &kcalc;.</para></listitem>
+</varlistentry>
+</variablelist>
+</para>
+
+</sect1>
+
+<sect1 id="editmenu">
+<title>The Edit Menu</title>
+<para>
+<variablelist>
+
+<varlistentry>
+<term><menuchoice>
+<shortcut>
+<keycombo action="simul">&Ctrl;<keycap>Z</keycap></keycombo>
+</shortcut>
+<guimenu>Edit</guimenu>
+<guimenuitem>Undo</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>Go back in the result
+stack.</action></para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<shortcut>
+<keycombo action="simul">&Ctrl;&Shift;<keycap>Z</keycap></keycombo>
+</shortcut>
+<guimenu>Edit</guimenu>
+<guimenuitem>Redo</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>Go forward in the result
+stack.</action>
+</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<shortcut>
+<keycombo action="simul">&Ctrl;<keycap>X</keycap></keycombo>
+</shortcut>
+<guimenu>Edit</guimenu>
+<guimenuitem>Cut</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>Delete the displayed result and copy it to the
+clipboard.</action></para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<shortcut>
+<keycombo action="simul">&Ctrl;<keycap>C</keycap></keycombo>
+</shortcut>
+<guimenu>Edit</guimenu>
+<guimenuitem>Copy</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>Copy the displayed result to the
+clipboard.</action></para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<shortcut>
+<keycombo action="simul">&Ctrl;<keycap>V</keycap></keycombo>
+</shortcut>
+<guimenu>Edit</guimenu>
+<guimenuitem>Paste</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>Insert the cut or copied result in the
+display.</action></para></listitem>
+</varlistentry>
+
+</variablelist>
+</para>
+</sect1>
+
+<sect1 id="viewmenu">
+<title>The Constants Menu</title>
+<para>
+<variablelist>
+
+<varlistentry>
+<term><menuchoice>
+<guimenu>Constants</guimenu>
+<guimenuitem>Mathematics</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>Display Pi, Euler Number or Golden Ratio.</action>
+</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<guimenu>Constants</guimenu>
+<guimenuitem>Electromagnetism</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>Display Light Speed, Elementary Charge,
+Impedance of Vacuum, Permeability of Vacuum or Permittivity of Vacuum.</action>
+</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<guimenu>Constants</guimenu>
+<guimenuitem>Atomic &amp; Nuclear</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>Display Planck's Constant, Elementary Charge or
+Fine-Structure Constant.</action>
+</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<guimenu>Constants</guimenu>
+<guimenuitem>Thermodynamics</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>Display Boltzmann Constant, Atomic Mass Unit, Molar Gas
+Constant, Stefan-Boltzmann Constant or Avogadro's Number.</action> 
+</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<guimenu>Constants</guimenu>
+<guimenuitem>Gravitation</guimenuitem>
+</menuchoice></term>
+<listitem><para>Display Constant of Gravitation or Earth Acceleration.
+</para></listitem>
+</varlistentry>
+
+</variablelist>
+</para>
+</sect1>
+
+<sect1 id="settingsmenu">
+<title>The Settings Menu</title>
+<para><variablelist>
+
+<varlistentry>
+<term><menuchoice>
+<guimenu>Settings</guimenu>
+<guimenuitem>Simple Mode</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>Displays the simple math buttons.</action>
+</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<guimenu>Settings</guimenu>
+<guimenuitem>Science Mode</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>Displays trigonometric and science buttons.</action>
+</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<guimenu>Settings</guimenu>
+<guimenuitem>Statistic Mode</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>Displays <link linkend="statistical-mode">statistic
+buttons.</link></action>
+</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<guimenu>Settings</guimenu>
+<guimenuitem>Numeral System Mode</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>Displays <link linkend="and-or-xor">logic
+buttons</link> and allows changing the numeral system.</action>
+</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<guimenu>Settings</guimenu>
+<guimenuitem>Constants Buttons</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>Display constants buttons. They are available in <link linkend="science-mode">science mode</link> and
+<link linkend="statistical-mode">statistic mode</link>. </action>
+</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<guimenu>Settings</guimenu>
+<guimenuitem>Show Bit Edit</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>Displays a bit edit field. Click on a bit to toggle it. Only available in
+<link linkend="numeral-system-mode">numeral system mode</link>.</action>
+</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<guimenu>Settings</guimenu>
+<guimenuitem>Configure Shortcuts...</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>Configure the keyboard shortcuts used by &kcalc;.
+</action> 
+</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<guimenu>Settings</guimenu>
+<guimenuitem>Configure &kcalc;...</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>Display</action> the &kcalc; settings dialog.
+</para></listitem>
+</varlistentry>
+
+</variablelist>
+</para>
+</sect1>
+
+<sect1 id="helpmenu">
+<title>The Help Menu</title>
+
+&help.menu.documentation;
+
+</sect1>
+
+</chapter>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-parent-document: ("index.docbook" "book" "chapter")
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+-->
