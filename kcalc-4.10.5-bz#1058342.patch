@@ -1,0 +1,13 @@
+diff -up kcalc-4.10.5/kcalc_core.cpp.misc kcalc-4.10.5/kcalc_core.cpp
+--- kcalc-4.10.5/kcalc_core.cpp.misc	2013-06-28 19:38:46.589913916 +0200
++++ kcalc-4.10.5/kcalc_core.cpp	2014-01-28 17:38:32.734620194 +0100
+@@ -82,6 +82,9 @@ KNumber ExecAdd(const KNumber &left_op,
+ }
+ 
+ KNumber ExecSubtract(const KNumber &left_op, const KNumber &right_op) {
++    if (left_op.toQString() == right_op.toQString()) {
++      return KNumber::Zero;
++    }
+     return left_op - right_op;
+ }
+ 

@@ -1,7 +1,7 @@
 Name: kcalc 
 Summary: Scientific Calculator 
 Version: 4.10.5
-Release: 1%{?dist}
+Release: 4%{?dist}
 
 License: GPLv2+
 URL:     https://projects.kde.org/projects/kde/kdeutils/kcalc
@@ -15,6 +15,9 @@ Source0: http://download.kde.org/%{stable}/%{version}/src/%{name}-%{version}.tar
 
 # fix arithmetic fault in mod, factorial
 Patch0: kcalc-4.9.90-misc.patch
+
+# fix e^1 - euler number constant does not return 0
+Patch1: kcalc-4.10.5-bz#1058342.patch
 
 BuildRequires: desktop-file-utils
 BuildRequires: kdelibs4-devel >= %{version}
@@ -38,7 +41,7 @@ functions than meet the eye on a first glance.
 %setup -q -n %{name}-%{version}
 
 %patch0 -p1 -b .misc
-
+%patch1 -p1 -b .euler
 
 %build
 mkdir -p %{_target_platform}
@@ -71,6 +74,15 @@ desktop-file-validate %{buildroot}%{_kde4_datadir}/applications/kde4/%{name}.des
 
 
 %changelog
+* Wed Jan 29 2014 Than Ngo <than@redhat.com> - 4.10.5-4
+- fix, e^1 - euler number constant does not return 0
+
+* Fri Jan 24 2014 Daniel Mach <dmach@redhat.com> - 4.10.5-3
+- Mass rebuild 2014-01-24
+
+* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 4.10.5-2
+- Mass rebuild 2013-12-27
+
 * Sun Jun 30 2013 Than Ngo <than@redhat.com> - 4.10.5-1
 - 4.10.5
 
